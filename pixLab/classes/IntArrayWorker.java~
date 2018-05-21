@@ -15,8 +15,6 @@ public class IntArrayWorker
    * Method to return the total 
    * @return the total of the values in the array
    */
-  
-  //Picture Lab, Worksheet 4
   public int getTotal()
   {
     int total = 0;
@@ -26,38 +24,6 @@ public class IntArrayWorker
       {
         total = total + matrix[row][col];
       }
-    }
-    return total;
-  }
-  
-  public int getCount (int a){
-    int count = 0;
-    for (int r = 0; r < matrix.length; r++){
-      for (int c = 0; c < matrix[r].length; c++){
-        if (matrix[r][c] == a){
-         count ++; 
-        }
-      }
-    }
-    return count;
-  }
-  
-  public int getLargest(){
-    int count = 0;
-    for (int r = 0; r < matrix.length; r++){
-      for (int c = 0; c < matrix[r].length; c++){
-        if (matrix[r][c] > count){
-         count = matrix[r][c]; 
-        }
-      }
-    }
-    return count;
-  }
-  
-  public int getColTotal(int col){
-    int total = 0;
-    for (int r = 0; r < matrix.length; r++){
-      total += matrix[r][col];
     }
     return total;
   }
@@ -132,7 +98,5 @@ public class IntArrayWorker
       }
     }
   }
-  
-  
  
 }
